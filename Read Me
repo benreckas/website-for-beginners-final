@@ -1,12 +1,9 @@
 To Do:
 
     Site-wide: 
-        Refactor and fully comment HTML/CSS
         If there is time - *Add Menu Nav Item*, *Transcribe Video for A11y*
-        Some Animation
-        Queries for XS Screen Sizes
-        Hamburger Menu?
         Work on JavaScript
+        Refactor CSS
             
     Home:
         Change image link to locations container in contact. 
@@ -15,14 +12,6 @@ To Do:
     About:
     
     Contact: 
-        
-        
-        
-
-
-
-
-
 
 
 
@@ -35,6 +24,10 @@ Completed:
             Increase font size
             Make sure visuals are clean and high contrast
         Work with line width of paragraphs. 60-70 characters preffered. 
+        Some Animation
+        Queries for XS Screen Sizes
+        Hamburger Menu?
+        Fully Commented HTML, CSS 
         
     Home: 
         Add dark semi opaque bg behind text on .about-img.

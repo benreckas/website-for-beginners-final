@@ -9,7 +9,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, img, div, nav, header, section, foo
 }
 
 body {
-    /* 1em == 10px */
+    /* Resizing 1em == 10px */
     font-size: 62.5%;
 }
 
@@ -41,13 +41,13 @@ a {
     text-decoration: none;
 }
 
+/* Replacing Default Styling on Form Field Focus */
 input:focus, textarea:focus, button:focus, select:focus {
     outline: none;
     box-shadow: 0 0 10px skyblue;
 }
 
 /* Header */
-
 header {
     display: flex;
     justify-content: center;
@@ -65,7 +65,9 @@ h1 {
     color: rgba(255, 255, 255, 1);
     margin: 0;
 }
+/* Header End */
 
+/* Nav */
 .nav-list {
     margin: 0 auto;
     display: block;
@@ -103,15 +105,15 @@ h1 {
 .menu {
     display: none;
 }
+/* Nav End */
 
+/* Empty Div to Reset Spacing of Fixed Header */
 .spacing-container {
     height: 128px;
     width: 100%;
 }
 
-
 /* Logo & Banner */
-
 .banner {
     display: flex;
     justify-content: center;
@@ -129,104 +131,105 @@ img.hero-img {
 img.logo {
     width: 30%;
 }
+/* Logo & Banner End */
 
-/* Content */
-
+/* Main Content */
 .main-content {
     width: 80%;
     margin: 0 auto;
 }
 
     /* Top Columns */
+    .top-columns {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+    
+    .coffee-column, .food-column, .community-column {
+        width: 30%;
+        text-align: center;
+    }
+    
+    .column-icon {
+        color: rgba(1, 30, 37, 1);
+        font-size: 7em;
+    }
+    
+    .top-columns h3 {
+        font-size: 4.6em;
+    }
+    
+    .top-columns p {
+        font-size: 1.7em;
+    }
+    /* End Top Content Container */
 
-.top-columns {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-}
+    /* Bottom Content Container */
+    .bottom-columns {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 50px 0;
+    }
+    
+        /* Image */
+        .about-img {
+            width: 65%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
+        }
+        
+        .about-img img {
+            max-width: 100%;
+            border-radius: 50px;
+        }
+        
+        .about-img {
+            opacity: .8;
+            -webkit-transition: all .4s;
+            -moz-transition: all .4s;
+            -o-transition: all .4s;
+            transition: all .4s;
+        }
+        
+        .about-img:hover {
+            -webkit-transform: scale(1.01);
+            transform: scale(1.01);
+            opacity: 1;
+        }
+        
+        .about-img h4 {
+            font-size: 6em;
+            position: absolute;
+            color: white;
+            letter-spacing: 2px;
+            background-color: rgba(1, 30, 37, .8);
+            padding: 8px 20px 0px 20px;
+            border-radius: 20px;
+        }
+        /* Image End */
 
-.coffee-column, .food-column, .community-column {
-    width: 30%;
-    text-align: center;
-}
-
-.column-icon {
-    color: rgba(1, 30, 37, 1);
-    font-size: 7em;
-}
-
-.top-columns h3 {
-    font-size: 4.6em;
-}
-
-.top-columns p {
-    font-size: 1.7em;
-}
-
-    /* Bottom Column Image */
-
-.bottom-columns {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 50px 0;
-}
-
-.about-img {
-    width: 65%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-}
-
-.about-img img {
-    max-width: 100%;
-    border-radius: 50px;
-}
-
-.about-img {
-    opacity: .8;
-    -webkit-transition: all .4s;
-    -moz-transition: all .4s;
-    -o-transition: all .4s;
-    transition: all .4s;
-}
-
-.about-img:hover {
-    -webkit-transform: scale(1.01);
-    transform: scale(1.01);
-    opacity: 1;
-}
-
-.about-img h4 {
-    font-size: 6em;
-    position: absolute;
-    color: white;
-    letter-spacing: 2px;
-    background-color: rgba(1, 30, 37, .8);
-    padding: 8px 20px 0px 20px;
-    border-radius: 20px;
-}
-
-    /* Bottom Column Text */
-
-.about-text {
-    width: 30%;
-}
-
-.about-text h3 {
-    font-size: 4.6em;
-    color: rgba(1, 30, 37, 1);
-}
-
-.about-text p {
-    font-size: 1.7em;
-}
+        /* Bottom Column Text */
+        .about-text {
+            width: 30%;
+        }
+        
+        .about-text h3 {
+            font-size: 4.6em;
+            color: rgba(1, 30, 37, 1);
+        }
+        
+        .about-text p {
+            font-size: 1.7em;
+        }
+        /* Bottom Column Text End */
+/* Main Content End */
 
 /* Footer */
-
 footer {
     height: 100px;
     display: flex;
@@ -235,49 +238,52 @@ footer {
     flex-wrap: wrap;
 }
 
-.social-icons {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-top: 15px;
-}
+    /* Social Media */
+    .social-icons {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 15px;
+    }
+    
+    .social-icons a {
+        margin-right: 40px;
+    }
+    
+    .social-icons a:last-child {
+        margin-right: 0;
+    }
+    
+    .social-icons i {
+        color: rgba(255, 255, 255, .7);
+        -webkit-transition: all .4s;
+        -moz-transition: all .4s;
+        -o-transition: all .4s;
+        transition: all .4s;
+        font-size: 4em;
+    }
+    
+    .social-icons i:hover {
+        color: rgba(255, 255, 255, 1);
+        transform: scale(1.1);
+        /*transform: rotate(5deg);*/
+    }
+    /* Social Media End */
 
-.social-icons a {
-    margin-right: 40px;
-}
-
-.social-icons a:last-child {
-    margin-right: 0;
-}
-
-.social-icons i {
-    color: rgba(255, 255, 255, .7);
-    -webkit-transition: all .4s;
-    -moz-transition: all .4s;
-    -o-transition: all .4s;
-    transition: all .4s;
-    font-size: 4em;
-}
-
-.social-icons i:hover {
-    color: rgba(255, 255, 255, 1);
-    transform: scale(1.1);
-    /*transform: rotate(5deg);*/
-}
-
-.copyright h5 {
-    color: rgba(255, 255, 255, .7);
-    font-size: 1em;
-    text-align: center;
-    font-family: "Teko";
-    color: white;
-    letter-spacing: 3px;
-    width: 100%;
-}
+    /* Copyright */
+    .copyright h5 {
+        color: rgba(255, 255, 255, .7);
+        font-size: 1em;
+        text-align: center;
+        font-family: "Teko";
+        color: white;
+        letter-spacing: 3px;
+        width: 100%;
+    }
+    /* Copyright End */
 
 /* Media Queries */
-
 @media (max-width: 1000px) {
 
     .main-content {
@@ -426,3 +432,4 @@ footer {
         background-color: rgba(100, 100, 100, 1); 
     }
 }
+/* Media Queries End */
