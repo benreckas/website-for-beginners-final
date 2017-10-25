@@ -1,0 +1,251 @@
+/* Header */
+
+/* Aside */
+
+aside {
+    background-color: rgba(225, 225, 225, .8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    z-index: -1;
+}
+
+aside p {
+    font-size: 1.8em;
+    margin-top: 25px;
+}
+
+/* Form */
+
+main {
+    margin-left: 200px;
+    padding-top: 50px;
+}
+
+.contact {
+    margin: 0 auto 50px auto;
+    border-top: 5px solid rgba(1, 30, 37, 1);
+    width: 80%;
+}
+
+.form-container {
+    padding-top: 25px;
+    width: 100%;
+}
+
+/* Locations */
+
+.locations {
+    width: 80%;
+    margin: 0 auto 50px auto;
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 5px solid rgba(1, 30, 37, 1);
+}
+
+.loc1, .loc2 {
+    width: 45%;
+}
+
+iframe {
+    width: 100%;
+    height: 543px;
+    border-radius: 5px;
+}
+
+h3 { 
+    font-size: 4.6em;
+}
+
+.info h3 {
+    font-size: 2.6em;
+}
+
+/* Form Styling */
+
+form {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 15px;
+	margin: 0 auto;
+    width: 95%;
+    background-color: #e7e7e7; 
+    background-image: linear-gradient(130deg, #fbfbfb 0%, #e7e7e7 100%);
+    border: 1px solid rgba(200, 200, 200, .3);
+    border-radius: 10px;
+}
+
+fieldset {
+	border: none;
+	margin-bottom: 15px;
+	position: relative;
+	width: 100%;
+	padding: 0 14px 0 4px;
+}
+
+select, label, input, textarea {
+	color: rgba(1, 60, 74, 1);
+	font-size: 1.6em;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-family: "Open Sans", sans-serif;
+}
+
+select.cs-select {
+	color: gray;
+	width: 90px;
+	height: 39px;
+	border: 2px rgba(200, 200, 200, .3) inset;
+	background-color: white;
+}
+
+.form-field:first-child {
+	width: auto;
+}
+
+.form-label {
+    letter-spacing: 1.1px;
+}
+
+.form-input {
+	height: 30px;
+	width: 100%;
+	padding: 3px;
+	border-radius: 5px;
+	color: black;
+	font-weight: 600;
+	text-transform: none;
+	border: 2px rgba(200, 200, 200, .3) inset;		
+}
+
+.name {
+	display: flex;
+	justify-content: center;
+	width: 90%;
+}
+
+form p {
+    text-transform: uppercase;
+    color: red;
+    display: inline-block;
+    font-size: 1em;
+    position: relative;
+    bottom: 2px;
+    left: 5px;
+}
+
+textarea.form-input {
+	height: 100px;
+	overflow: auto;
+}
+
+.btn {
+	font-size: 1.4em;
+	width: 120px;
+	height: 30px;
+	padding: 0;
+	color: rgba(1, 30, 37, 1);
+	font-family: "Open Sans", sans-serif;
+	font-weight: 550;
+	text-shadow: 2px 2px 5px #eee;
+	border: 1px solid lightgray;
+	border-radius: 15px;
+	box-shadow: 0px 0 5px #ddd;
+	background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+label.newsletter {
+	font-size: 1em;
+}
+
+.form-verify {
+    width: 100%;
+    margin-top: 10px;
+    color: rgba(1, 30, 37, 1);
+    text-align: center;
+}
+
+/* Media Queries */
+
+@media (max-width: 1000px) {
+
+    .locations {
+        flex-wrap: wrap;
+    }
+
+    .loc1, .loc2 {
+        width: 100%;
+    }
+
+    .loc2 {
+        margin-top: 25px;
+    }
+    
+    .name {
+        width: 100%;
+    }
+}
+
+@media (max-width: 720px) {
+
+    aside {
+        background-color: rgba(225, 225, 225, .8);
+        width: 400px;
+        height: auto;
+        position: relative;
+        margin: 50px auto 0 auto;
+        border-radius: 10px;
+    }
+    
+    aside h3 {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    aside p {
+        margin-top: 25px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    aside p:last-child {
+        margin-bottom: 25px;
+    }
+    
+    main {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .name {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .title, .first-name, .last-name {
+        width: 100%;
+    }
+    
+    .last-name {
+        margin-top: -30px;
+    }
+    
+    .title {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+}
+

@@ -1,0 +1,56 @@
+To Do:
+
+    Site-wide: 
+        Refactor and fully comment HTML/CSS
+        If there is time - *Add Menu Nav Item*, *Transcribe Video for A11y*
+        Some Animation
+        Queries for XS Screen Sizes
+        Hamburger Menu?
+        Work on JavaScript
+            
+    Home:
+        Change image link to locations container in contact. 
+            either contact.html#someid or some JavaScript
+
+    About:
+    
+    Contact: 
+        
+        
+        
+
+
+
+
+
+
+
+
+Completed: 
+
+    Site-wide:
+        Add breadcrumb to nav bar. White underline.
+        Make logo into SVG so it scales properly
+        Take Universal Approach to A11y
+            Increase font size
+            Make sure visuals are clean and high contrast
+        Work with line width of paragraphs. 60-70 characters preffered. 
+        
+    Home: 
+        Add dark semi opaque bg behind text on .about-img.
+        Increase font-size of <p>.
+        Add "Clovis Coffee Co." to header so it's consistent across site. 
+
+    About:
+        Change styling of bottom set of columns
+        Query different video sizes. How does this affect load time?
+        ! Add a JavaScript "Read More" button on ".our-story" to
+            breakup the text.
+    
+    Contact: 
+        Remove BG behind form. Too distracting. 
+        Restyle Maps
+        Fix Wufoo Form
+            Existing from Submit button is hidden. 
+            Height of Div isn't large enough.
+        Write and Style my own, non-functioning form.
