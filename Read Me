@@ -4,10 +4,8 @@ To Do:
         If there is time - *Add Menu Nav Item*, *Transcribe Video for A11y*
         Work on JavaScript
         Refactor CSS
-            
+
     Home:
-        Change image link to locations container in contact. 
-            either contact.html#someid or some JavaScript
 
     About:
     
@@ -34,6 +32,8 @@ Completed:
         Add dark semi opaque bg behind text on .about-img.
         Increase font-size of <p>.
         Add "Clovis Coffee Co." to header so it's consistent across site. 
+        Change image link to locations container in contact. 
+        either contact.html#someid or some JavaScript
 
     About:
         Change styling of bottom set of columns
