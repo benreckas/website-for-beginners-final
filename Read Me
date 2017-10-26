@@ -2,7 +2,6 @@ To Do:
 
     Site-wide: 
         If there is time - *Add Menu Nav Item*, *Transcribe Video for A11y*
-        Work on JavaScript
         Refactor CSS
 
     Home:
@@ -34,6 +33,7 @@ Completed:
         Remove images that are not being used. 
         
     Home: 
+        Carousel
         Add dark semi opaque bg behind text on .about-img.
         Increase font-size of <p>.
         Add "Clovis Coffee Co." to header so it's consistent across site. 
