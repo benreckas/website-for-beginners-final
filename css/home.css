@@ -1,5 +1,31 @@
 /* Initially styled on 1000px width view */
 
+/* OOCSS Classes */
+
+.flex {
+    display: flex;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.margin-center {
+    margin: 0 auto;
+}
+
+.max-width-100 {
+    max-width: 100%;
+}
+
+.darkblue {
+    color: rgba(1, 30, 37, 1);
+}
+
+.white {
+    color: rgba(255, 255, 255, 1);
+}
+
 /* Default Styles */
 
 body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, img, div, nav, header, section, footer, aside {
@@ -385,7 +411,7 @@ footer {
         position: relative;
     }
     
-    nav {
+    .topnav {
         display: none;
         width: 100%;
     }
@@ -430,6 +456,10 @@ footer {
     .nav-breadcrumb {
         border: none;
         background-color: rgba(100, 100, 100, 1); 
+    }
+    
+    .topnav.responsive {
+        display: block;
     }
 }
 /* Media Queries End */

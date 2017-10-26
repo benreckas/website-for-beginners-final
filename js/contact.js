@@ -1,5 +1,4 @@
 // Form Submit Confirmation
-
 function clicked (event) {
     event.preventDefault();
     console.log('clicked');
